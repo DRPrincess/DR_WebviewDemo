@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Downloads/DR_WebViewDemo/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="/Users/admin/Downloads/DR_WebViewDemo/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.3.1_c94535f052ab7ba9e52e214cb05c6f6a6913956b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Downloads/DR_WebViewDemo/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="/Users/admin/Downloads/DR_WebViewDemo/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.3.1_085339018aca2732ed6ca1219020a6907300c36b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Downloads/DR_WebViewDemo/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/admin/Downloads/DR_WebViewDemo/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.3.1_430d2db38b759368456b8cb5b5ddf170d78ec969.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="/Users/admin/Downloads/DR_WebViewDemo/app/build/intermediates/pre-dexed/debug/support-annotations-25.3.1_f37e95579d4a3f3552050a9363750900bf28d866.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Downloads/DR_WebViewDemo/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="/Users/admin/Downloads/DR_WebViewDemo/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.3.1_e61ec55fdddc0cc94612d5c388c5a42f85cf0bee.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Downloads/DR_WebViewDemo/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="/Users/admin/Downloads/DR_WebViewDemo/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.3.1_efcdc05c4258b25885c42b461584bffcbf1d97e5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Downloads/DR_WebViewDemo/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="/Users/admin/Downloads/DR_WebViewDemo/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.3.1_47c45609e376328c9946bf4f7b766daa0aef6602.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Downloads/DR_WebViewDemo/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="/Users/admin/Downloads/DR_WebViewDemo/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.3.1_997f5c3be85a3ab5d99f1795786856ec896d0ef4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Downloads/DR_WebViewDemo/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="/Users/admin/Downloads/DR_WebViewDemo/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.3.1_88d0c425faf6251fc3e977e8584b495eb4b0e137.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Downloads/DR_WebViewDemo/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="/Users/admin/Downloads/DR_WebViewDemo/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.3.1_145060dcba3da190953f9148febf118bc1638c57.jar" />
+    </item>
+
+</items>
