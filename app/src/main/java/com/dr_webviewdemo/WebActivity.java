@@ -18,8 +18,10 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.FileProvider;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.view.View;
+import android.view.Window;
 import android.webkit.ValueCallback;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
@@ -31,17 +33,16 @@ import java.io.File;
 import java.util.UUID;
 
 /**
- * 通用加载类
- * 加载进度条
- * 返回按钮
- * 上传图片
+ * webview通用加载类
+ * 加载进度条显示
+ * 上传图片的支持
  */
 public class WebActivity extends AppCompatActivity implements View.OnClickListener {
 
+    Context mContext;
     private static final int REQUEST_CODE_ALBUM = 0x01;
     private static final int REQUEST_CODE_CAMERA = 0x02;
     private static final int REQUEST_CODE_PERMISSION_CAMERA = 0x03;
-    Context mContext;
     WebView mWebView;
     ProgressBar mProgressBar;
     TextView tvClose;
@@ -56,6 +57,7 @@ public class WebActivity extends AppCompatActivity implements View.OnClickListen
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web);
+
 
         mContext = this;
         //绑定控件ID
@@ -119,6 +121,7 @@ public class WebActivity extends AppCompatActivity implements View.OnClickListen
 
             }
 
+            //For Android  >= 5.0
             @Override
             public boolean onShowFileChooser(WebView webView, ValueCallback<Uri[]> filePathCallback, FileChooserParams fileChooserParams) {
 
@@ -127,20 +130,6 @@ public class WebActivity extends AppCompatActivity implements View.OnClickListen
                 return true;
             }
 
-
-            // For Android < 3.0
-            public void openFileChooser(ValueCallback<Uri> valueCallback) {
-
-                uploadMessage = valueCallback;
-                uploadPicture();
-            }
-
-            // For Android  >= 3.0
-            public void openFileChooser(ValueCallback valueCallback, String acceptType) {
-
-                uploadMessage = valueCallback;
-                uploadPicture();
-            }
 
             //For Android  >= 4.1
             public void openFileChooser(ValueCallback<Uri> valueCallback, String acceptType, String capture) {
@@ -194,9 +183,7 @@ public class WebActivity extends AppCompatActivity implements View.OnClickListen
 
         if (requestCode == REQUEST_CODE_PERMISSION_CAMERA) {
 
-
             if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-
                 takePhoto();
             } else {
                 // Permission Denied
@@ -221,7 +208,7 @@ public class WebActivity extends AppCompatActivity implements View.OnClickListen
     }
 
     /**
-     * 上传图片
+     * 选择相机或者相册
      */
     public void uploadPicture() {
 
@@ -233,7 +220,7 @@ public class WebActivity extends AppCompatActivity implements View.OnClickListen
             @Override
             public void onCancel(DialogInterface dialog) {
 
-                //一定要返回null,否则<input file> 就是没有反应
+                //一定要返回null,否则<input type='file'>
                 if (uploadMessage != null) {
                     uploadMessage.onReceiveValue(null);
                     uploadMessage = null;
@@ -310,7 +297,7 @@ public class WebActivity extends AppCompatActivity implements View.OnClickListen
         StringBuilder fileName = new StringBuilder();
         Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
 
-        fileName.append(UUID.randomUUID()).append("upload.png");
+        fileName.append(UUID.randomUUID()).append("_upload.png");
         File tempFile = new File(mContext.getExternalFilesDir(Environment.DIRECTORY_PICTURES), fileName.toString());
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
             intent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);

@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-git# Built application files
-=======
+
 # Built application files
->>>>>>> origin/master
 *.apk
 *.ap_
 
@@ -56,8 +53,4 @@ google-services.json
 # Freeline
 freeline.py
 freeline/
-<<<<<<< HEAD
 freeline_project_description.json
-=======
-freeline_project_description.json
->>>>>>> origin/master

@@ -8,6 +8,12 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--横向进度条样式-->
     <style name="progressHorizontalStyle" parent="Widget.AppCompat.ProgressBar.Horizontal">
         <item name="android:maxHeight">5dip</item>
         <item name="android:minHeight">5dip</item>
@@ -16,8 +22,14 @@
             @android:drawable/progress_indeterminate_horizontal
         </item>
         <item name="android:progressDrawable">@drawable/progressbar_color_size</item>
+    </style>
 
 
+
+    <!--没有ActionBar的窗口主题-->
+    <style name="NoTitleBarTheme" parent="AppTheme">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
     </style>
 
 </resources>

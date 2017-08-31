@@ -15,3 +15,14 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
+
+
+-keepclassmembers class * {
+    @android.webkit.JavascriptInterface <methods>;
+}
+
+
+#确保方法不被混淆
+-keepclassmembers class * extends android.webkit.WebChromeClient{
+ public void openFileChooser(...);
+ }

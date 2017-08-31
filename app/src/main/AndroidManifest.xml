@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
           package="com.dr_webviewdemo">
 
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -19,10 +20,27 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".ScrollViewOutsideActivity">
+        <activity
+            android:name=".ScrollViewOutsideActivity">
         </activity>
-        <activity android:name=".WebActivity">
+        <activity
+            android:name=".WebActivity"
+            android:theme="@style/NoTitleBarTheme">
         </activity>
+
+
+        <!-- 解决 Android N 7.0 上 报错：android.os.FileUriExposedException -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+
     </application>
 
 </manifest>
