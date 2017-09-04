@@ -58,7 +58,6 @@ public class WebActivity extends AppCompatActivity implements View.OnClickListen
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web);
 
-
         mContext = this;
         //绑定控件ID
         initView();
@@ -138,7 +137,7 @@ public class WebActivity extends AppCompatActivity implements View.OnClickListen
             }
 
         });
-        String onlineUrl = "http://testreallycarm.365eche.net/ocert";
+        String onlineUrl = "http://m.reallycar.cn/ocert";
         mWebView.loadUrl(onlineUrl);
 
 

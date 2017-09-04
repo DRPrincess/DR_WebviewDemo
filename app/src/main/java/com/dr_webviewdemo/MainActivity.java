@@ -12,14 +12,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        
-        findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,ScrollViewOutsideActivity.class);
-                startActivity(intent);
-            }
-        });
+
         findViewById(R.id.button_web).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

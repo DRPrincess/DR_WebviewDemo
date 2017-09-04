@@ -14,22 +14,14 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="说明：\n由于不会H5，所以 webview 的链接直接用的是公司的在线检测产品的url，需要注册账号才能选择照片"
         android:id="@+id/textView"/>
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
-        android:text="外层嵌套scrollview"
-        />
 
     <Button
         android:id="@+id/button_web"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button"
-        android:text="通用的webview加载类"
+        android:layout_below="@+id/textView"
+        android:text="webview通用加载类"
         android:layout_marginTop="10dp"/>
 </RelativeLayout>
